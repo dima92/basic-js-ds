@@ -24,17 +24,25 @@ const {NotImplementedError} = require('../extensions/index.js');
  */
 
 function removeKFromList(l, k) {
-  let current = l;
-  if (l.value == k) {
-    l = l.next;
-  }
-  while (current.next) {
-    if (current.next.value == k) {
-      current.next = current.next.next;
+  let listPointer = l;
+
+  let newList;
+  let newListPointer;
+
+  do {
+    const item = listPointer.value === k ? newListPointer : listPointer;
+    newList = newList || item;
+    newListPointer = newListPointer || newList;
+
+    if (item !== newListPointer) {
+      newListPointer.next = item;
+      newListPointer = newListPointer.next;
     }
-    current = current.next
-  }
-  return l;
+  } while ((listPointer = listPointer.next))
+
+  newListPointer.next = null;
+
+  return newList;
 }
 
 module.exports = {
