@@ -1,4 +1,4 @@
-const {NotImplementedError} = require('../extensions/index.js');
+const {NotImplementedError} = require('../../../OneDrive/Desktop/basic-js-ds/extensions');
 
 // const { ListNode } = require('../extensions/list-node.js');
 

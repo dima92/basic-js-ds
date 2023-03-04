@@ -1,6 +1,6 @@
-const {NotImplementedError} = require('../extensions/index.js');
+const {NotImplementedError} = require('../../../OneDrive/Desktop/basic-js-ds/extensions');
 
-const {ListNode} = require('../extensions/list-node.js');
+const {ListNode} = require('../../../OneDrive/Desktop/basic-js-ds/extensions/list-node.js');
 
 /**
  * Implement the Queue with a given interface via linked list (use ListNode extension above).
