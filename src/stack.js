@@ -1,5 +1,3 @@
-const {NotImplementedError} = require('../../../OneDrive/Desktop/basic-js-ds/extensions');
-
 /**
  * Implement the Stack with a given interface via array.
  *
